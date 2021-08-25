@@ -1,0 +1,101 @@
+.sold
+  position: relative
+  background: url(../img/sold/bg.jpg)no-repeat top center / cover
+  text-align: center
+  padding: 55px 0 80px 0
+  @media ( max-width: 576px )
+    padding: 25px 0 50px 0
+  .sold-title
+    font-family: $font
+    font-weight: 700
+    font-size: 36px
+    text-transform: uppercase
+    color: #FFFFFF
+    @media ( max-width: 576px )
+      font-size: 30px
+  .download
+    -webkit-appearance: none
+    position: relative
+    border: none
+    width: 598.27px
+    margin: 0 auto
+    height: 55px
+    margin-top: 50px
+    @media ( max-width: 767px )
+      width: 100%
+    @media ( max-width: 576px )
+      margin-top: 25px
+    &::-webkit-progress-bar
+      background: transparent
+    &::-webkit-progress-value
+      background: url(../img/sold/progress-line.png)no-repeat
+      background-size: 100%
+      mix-blend-mode: color-dodge
+      transition: all .5s
+    &::before
+      content: ""
+      position: absolute
+      background: url(../img/sold/Rectangle-left.svg)no-repeat
+      left: 0
+      height: 50px
+      width: 15.58px
+      top: 2px
+      @media ( max-width: 576px )
+        background-size: 32%
+    &::after
+      content: ""
+      position: absolute
+      background: url(../img/sold/Rectangle-right.svg)no-repeat
+      right: 2px
+      height: 50px
+      width: 15.58px
+      top: 2px
+      @media ( max-width: 767px )
+        right: -2px
+        top: 0
+      @media ( max-width: 576px )
+        background-size: 50%
+        right: -7px
+  .sold-procent
+    display: flex
+    justify-content: space-between
+    align-items: center
+    font-family: $font
+    font-weight: 500
+    font-size: 20px
+    text-transform: uppercase
+    color: #FFFFFF
+    margin-top: 40px
+    @media ( max-width: 576px )
+      margin-top: 20px
+    span
+      &:nth-child(1)
+        width: 100%
+        background: #fff
+        height: 1px
+      &:nth-child(2)
+        margin: 0 50px
+      &:nth-child(3)
+        width: 100%
+        background: #fff
+        height: 1px
+  .sold-btn
+    margin-top: 35px
+    border: 1px solid rgba(255, 255, 255, 0.3)
+    box-sizing: border-box
+    border-radius: 80px
+    padding: 10px 70px
+    font-family: $font
+    font-weight: 500
+    font-size: 24px
+    text-transform: uppercase
+    color: #FFFFFF
+    @media ( max-width: 576px )
+      border: 3px solid rgba(255, 255, 255, 0.3)
+      font-size: 20px
+      padding: 15px 10px
+    &:hover
+      background: #fff
+      color: #2A5298
+    .now
+    .max

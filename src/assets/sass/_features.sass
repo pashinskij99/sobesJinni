@@ -1,0 +1,105 @@
+.features
+  position: relative
+  background: url(../img/features/bg.jpg)no-repeat top center / cover
+  padding: 80px 0 100px 0
+  @media ( max-width: 576px )
+    display: none
+  h4
+    font-family: $font
+    font-weight: 900
+    font-size: 36px
+    color: #FFFFFF
+    margin-bottom: 130px
+  .features-list
+    position: relative
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    height: 220px
+    z-index: 1
+    &:nth-child(3)
+      @media (max-width: 767px)
+        margin-top: 255px 
+    &:nth-child(2)
+      z-index: 2
+      height: 135px
+      margin-bottom: 84px
+      @media (max-width: 1200px) 
+        margin-bottom: 440px   
+      @media (max-width: 992px) 
+        margin-bottom: 10px 
+    .features-item
+      position: relative
+      width: 235px
+      height: 148px
+      text-align: center
+      margin: 0 10px
+      @media (max-width: 1200px) 
+        margin-bottom: 140px
+      @media (max-width: 992px) 
+        width: 148px
+        height: 100px
+      @media (max-width: 767px)
+        margin-bottom: 95px 
+      &::after
+        content: ""
+        position: absolute
+        height: 266px
+        width: 236px
+        background: url(../img/features/polygon.svg) no-repeat top center / cover
+        left: 69px
+        top: -80px
+        z-index: -1
+        pointer-events: none
+        @media (max-width: 992px)
+          height: 150px
+          width: 134px
+          left: 70px
+          top: -60px
+        @media (max-width: 767px)
+          display: none
+      .item-descr
+        position: relative
+        height: 85px
+        overflow: hidden
+        font-family: $font
+        font-weight: 700
+        font-size: 18px
+        line-height: 157.5%
+        color: #FFFFFF
+        padding: 0 25px
+        z-index: 1
+        cursor: pointer
+        @media (max-width: 992px) 
+          font-size: 14px
+          padding: 0 5px
+          width: 100%
+      .hexagon
+        position: absolute
+        width: 228px
+        height: 135px
+        border: 4px solid #fff
+        border-top: none
+        border-bottom: none
+        left: 0px
+        top: 0px
+        background: #2A5298
+        @media (max-width: 992px) 
+          width: 152px
+          height: 91px    
+        &:nth-child(2)
+          transform: rotate(60deg)
+        &:nth-child(3)
+          transform: rotate(-60deg)
+      &:hover
+        .item-descr
+          font-weight: 400
+          font-size: 14px
+          color: #1E3C72
+          overflow: visible
+          @media (max-width: 992px) 
+            font-size: 10px
+        .hexagon
+          background-color: #fff
+          
+        

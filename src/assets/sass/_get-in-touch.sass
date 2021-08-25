@@ -1,0 +1,61 @@
+.get-in-touch
+  padding-bottom: 80px
+  padding-top: 20px
+  text-align: center
+  @media (max-width: 767px) 
+    padding-bottom: 35px
+  @media ( max-width: 576px )
+    padding-top: 50px 
+  h4
+    font-family: $font
+    font-weight: 900
+    font-size: 36px
+    color: #1E3C72
+    margin: 0
+  p
+    font-family: $font
+    font-weight: 400
+    font-size: 18px
+    line-height: 165%
+    color: #375D9F
+    width: 582px
+    margin: 0 auto
+    margin-top: 28px
+    @media (max-width: 767px)
+      width: 100% 
+  .get-in-touch-btns
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-top: 60px 
+    @media (max-width: 767px) 
+      flex-direction: column
+    button
+      display: flex
+      align-items: center
+      background-image: linear-gradient(90deg, #3B529E 0%, #CE51CE 100%)
+      background-size: 100%
+      border-radius: 100px
+      font-family: $font
+      font-weight: 500
+      font-size: 14px
+      text-transform: uppercase
+      color: #FFFFFF
+      padding: 16px 20px
+      width: 270px
+      @media (max-width: 1200px) 
+        max-width: 230px
+      @media (max-width: 992px)
+        font-size: 12px 
+      @media (max-width: 767px)
+        margin-bottom: 20px
+      &:nth-child(1)
+        padding: 16px 0px 16px 10px
+      &:hover
+        background-size: 200%
+      img
+        margin-right: 25px
+        @media (max-width: 1200px)
+          margin-right: 10px
+        @media (max-width: 992px)
+          margin-right: 5px

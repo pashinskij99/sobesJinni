@@ -1,0 +1,178 @@
+$fcolor: #BB52C9
+$scolor: #35519C
+  
+.cost
+  text-align: center
+  h4
+    font-family: $font
+    font-style: normal
+    font-weight: 900
+    font-size: 48px
+    color: #1E3C72
+    padding-bottom: 25px 
+    border-bottom: 1px solid #CCCCCC
+    @media ( max-width: 767px )
+      font-size: 35px
+    @media ( max-width: 576px ) 
+      font-size: 30px
+  .cost-tabs
+    .cost-nav
+      display: flex
+      justify-content: space-between
+      align-items: center
+      @media ( max-width: 767px )
+        justify-content: center
+      @media ( max-width: 576px ) 
+        justify-content: space-around
+      .cost-prev, .cost-next
+        transition: all .5s
+        cursor: pointer
+        &:hover
+          -moz-transform: scale(1.1)
+          -webkit-transform: scale(1.1)
+          -o-transform: scale(1.1)
+          -ms-transform: scale(1.1)
+          transform: scale(1.1)
+        img
+      .cost-list
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 0 60px
+        @media (max-width: 992px) 
+          padding: 0px 15px
+        @media ( max-width: 767px )
+          padding: 0 5px
+        @media ( max-width: 576px )  
+          display: none
+        .cost-item
+          display: flex
+          align-items: center
+          justify-content: center
+          position: relative
+          width: 79.2px
+          height: 79.2px
+          margin: 0 20px
+          padding: 10px 10px 10px 0px 
+          transition: background-size, .3s
+          cursor: pointer
+          @media (max-width: 992px) 
+            width: 74.2px
+            height: 74.2px
+            margin: 0 10px
+          @media ( max-width: 767px )
+            width: 50px
+            height: 50px
+            padding: 5px 5px 5px 0px
+          img
+            height: 100%
+            border-radius: 100%
+            pointer-events: none
+          .item-coins 
+            position: absolute
+            bottom: 0
+            right: 0
+            left: -10px
+            margin-right: auto
+            margin-left: auto
+            pointer-events: none
+            @media ( max-width: 767px )
+              left: -2px
+            span
+              font-family: $font
+              font-style: normal
+              font-weight: 700
+              font-size: 14px
+              color: #FFFFFF
+              letter-spacing: 0.08em
+              background: linear-gradient(90deg, #BB52C9 0%, #35519C 90.48%)
+              border-radius: 4px
+              padding: 7px 10px
+        .cost-item-active
+            background: url(../img/cost/character-small-back.svg) no-repeat right
+            background-size: 65% 93%
+            -moz-transform: scale(1.1)
+            -webkit-transform: scale(1.1)
+            -o-transform: scale(1.1)
+            -ms-transform: scale(1.1)
+            transform: scale(1.1)
+  .cost-tabs-content
+    background: url(../img/coin/bg.jpg)no-repeat top center / cover
+    margin-top: 30px
+    .content-list
+      .content-item
+        display: flex
+        flex-direction: row-reverse
+        justify-content: space-between
+        align-items: center
+        @media ( max-width: 576px ) 
+          flex-direction: column-reverse
+          justify-content: center
+        .content-img
+          background: url(../img/cost/character-back.png) no-repeat center center
+          padding: 0 50px
+          @media ( max-width: 576px ) 
+            background-position: -220px
+            padding: 0
+          img
+            height: 600px
+        .content-about
+          max-width: 45%
+          text-align: left
+          @media ( max-width: 576px ) 
+            max-width: 100%
+            text-align: center
+            padding: 20px 0
+          h5
+            font-family: $font
+            font-style: normal
+            font-weight: 700
+            font-size: 24px
+            color: #1E3C72
+            margin: 0
+            margin-bottom: 10px
+          span
+            font-family: $font
+            font-style: normal
+            font-weight: normal
+            font-size: 18px
+            color: #1E3C72
+          p
+            font-family: $font
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 170%
+            color: #375D9F
+          .content-coins
+            display: flex
+            margin-top: 30px
+            @media ( max-width: 576px ) 
+              justify-content: center
+            .content-btn
+              font-family: $font
+              font-style: normal
+              font-weight: 700
+              font-size: 16px
+              color: #FFFFFF
+              letter-spacing: 0.08em
+              position: relative
+              margin-right: 10px
+              background-image: linear-gradient(270deg, $fcolor 0%, $scolor 100%)
+              background-size: 150%
+              background-position: left
+              border-radius: 8px
+              padding: 8px 30px
+              z-index: 1
+              transition: all .3s
+              @media ( max-width: 576px ) 
+                padding: 15px 55px
+                font-size: 20px
+              &:hover
+                background-position: right
+      .hide
+        display: none
+      .show
+        display: block
+      .d-flex
+        display: flex 
